@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1><center>Online Quiz</center></h1>
+        <p id="question">What is the capital of France</p>
+
+        <div class="options">
+            <label>
+                <input type="radio" name="option" value="0">
+                Berlin
+                <div id="option0"></div>
+            </label>
+            <label>
+                <input type="radio" name="option" value="1">
+                Madrid
+                <div id="option1"></div>
+            </label>
+            <label>
+                <input type="radio" name="option" value="2">
+                Paris
+                <div id="option2"></div>
+            </label>
+            <label>
+                <input type="radio" name="option" value="3">
+                Rome
+                <div id="option3"></div>
+            </label>
+        </div>
+
+        <div class="navigation-buttons">
+            <button onclick="previousQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+        </div>
+        <div class="quiz-container">
+            <h1><center>Online Quiz</center></h1>
+            <p id="question">Which Planet is known as the red planet</p>
+    
+            <div class="options">
+                <label>
+                    <input type="radio" name="option" value="0">
+                    Earth
+                    <div id="option0"></div>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="1">
+                    Mars
+                    <div id="option1"></div>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="2">
+                   Jupiter
+                    <div id="option2"></div>
+                </label>
+                <label>
+                    <input type="radio" name="option" value="3">
+                     Saturn
+                    <div id="option3"></div>
+                </label>
+            </div>
+    
+            <div class="navigation-buttons">
+                <button onclick="previousQuestion()">Previous</button>
+                <button onclick="nextQuestion()">Next</button>
+            </div>
+            <div class="quiz-container">
+                <h1><center>Online Quiz</center></h1>
+                <p id="question">What is the largest ocean on Earth</p>
+        
+                <div class="options">
+                    <label>
+                        <input type="radio" name="option" value="0">
+                        Atlantic
+                        <div id="option0"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="1">
+                        Indian
+                        <div id="option1"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="2">
+                        Arctic
+                        <div id="option2"></div>
+                    </label>
+                    <label>
+                        <input type="radio" name="option" value="3">
+                        Pacific
+                        <div id="option3"></div>
+                    </label>
+                </div>
+        
+                <div class="navigation-buttons">
+                    <button onclick="previousQuestion()">Previous</button>
+                    <button onclick="nextQuestion()">Next</button>
+                    <button onclick="submitQuiz()" id="submit-btn">Submit</button>
+                </div>
+        
+    
+
+        <p id="score" style="display: none;">Your Score: <span id="score-value">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
